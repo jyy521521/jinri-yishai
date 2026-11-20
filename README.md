@@ -1,6 +1,6 @@
 # 今日宜晒 · 微信休闲小游戏
 
-> P1a 浏览器纵切原型，尚未接入微信小游戏 SDK，也没有真实广告。
+> P1b 轻松晒晒浏览器原型，尚未接入微信小游戏 SDK，也没有真实广告。
 
 ## 在线试玩
 
@@ -35,3 +35,13 @@ https://jyy521521.github.io/jinri-yishai/
 ## 本地预览
 
 `python3 -m http.server 8080 --directory site`，在浏览器打开 http://localhost:8080 。
+
+
+## BETA 02 · P1b 核心玩法重构
+
+根据用户试玩反馈，改为单指点击收成、自动补货、连击奖励、雨前预警一键开棚和小院成长。P1a 九宫格保留在 Git 历史，不再作为正式主玩法。
+
+- 主源码依然是 `site/index.html`，由 Pages 自动部署。
+- [新版玩法与验收](docs/P1b_核心玩法重构.md)
+- [浏览器冒烟测试](tests/p1b_smoke.py)
+- 当前未接微信 SDK、真实广告或付费能力。
